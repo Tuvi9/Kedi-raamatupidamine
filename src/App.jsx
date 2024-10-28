@@ -1,6 +1,8 @@
+import Footer from "./Components/Footer";
+
 function App() {
     return (
-        <h1>Kedi-raamatupidamine</h1>
+        <Footer />
     )
 }
 
