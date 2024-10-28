@@ -1,8 +1,12 @@
 import Footer from "./Components/Footer";
+import Hero from "./Components/Hero"
 
 function App() {
     return (
-        <Footer />
+        <div>
+            <Footer />
+            <Hero />
+        </div>
     )
 }
 
