@@ -1,4 +1,3 @@
-import '../index.css'
 import footerLogo from '../assets/Header-logo-example.png'
 
 export default function Footer() {
