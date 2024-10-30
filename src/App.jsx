@@ -1,21 +1,16 @@
-import Header from "./Components/Header";
-import Hero from "./Components/Hero"
-import Product from "./Components/Product"
-import Introduction from "./Components/Introduction"
-import Form from './Components/Form'
-import Footer from "./Components/Footer";
+import Home from './Pages/Home'
+import ProductDesc from './Pages/ProductDesc'
 import './index.css'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
     return (
-        <div>
-            <Header />
-            <Hero />
-            <Product />
-            <Introduction />
-            <Form />
-            <Footer />
-        </div>
+        <Router>
+            <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/desc1' element={<ProductDesc/>}/>
+            </Routes>
+        </Router>
     )
 }
 
