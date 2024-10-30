@@ -1,6 +1,7 @@
 import Footer from "./Components/Footer";
 import Hero from "./Components/Hero"
 import Product from "./components/Product"
+import Introduction from "./components/Introduction"
 import './index.css'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
             <Footer />
             <Hero />
             <Product />
+            <Introduction />
         </div>
     )
 }
