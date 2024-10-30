@@ -2,7 +2,7 @@ import introductionPhoto from '../assets/introduction-photo.png'
 
 export default function Introduction() {
     return(
-        <div className='grid grid-cols-2 grid-rows-2 pt-24 max-w-5xl justify-center mx-auto'>
+        <div className='grid grid-cols-2 pt-24 max-w-5xl justify-center mx-auto'>
             <div className='border-4 border-purple-700 rounded-md'>
                 <img src={introductionPhoto}></img>
             </div>
