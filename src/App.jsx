@@ -3,6 +3,7 @@ import Hero from "./Components/Hero"
 import Product from "./Components/Product"
 import Introduction from "./Components/Introduction"
 import Form from './Components/Form'
+import Footer from "./Components/Footer";
 import './index.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <Product />
             <Introduction />
             <Form />
+            <Footer />
         </div>
     )
 }

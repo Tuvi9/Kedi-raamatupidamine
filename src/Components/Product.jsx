@@ -22,7 +22,7 @@ export default function Product() {
                         >
                             <div className='text-2xl flex flex-col justify-between h-full'>
                                 {data.name}
-                                <div className='border-2 p-2 rounded-md self-end'>
+                                <div className='hover:bg-violet-700 border-2 p-2 rounded-md self-end'>
                                     <button>
                                         Loe lähemalt
                                     </button>
