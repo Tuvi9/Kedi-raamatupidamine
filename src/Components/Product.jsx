@@ -1,4 +1,5 @@
 import productDesc from '../productDesc.json'
+import rectangleImage from '../assets/Rectangle.png'
 
 export default function Product() {
     return(
@@ -13,7 +14,7 @@ export default function Product() {
                     <div className='flex justify-center items-center h-full' key={data.name}>
                         <div className='border-4 p-4 border-purple-700 text-white text rounded-md w-[300px] max-w-[300px] max-h-[225px] h-[225px] break-words'
                             style={{
-                                backgroundImage: `url("${data.background}")`,
+                                backgroundImage: `url(${rectangleImage})`,
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',

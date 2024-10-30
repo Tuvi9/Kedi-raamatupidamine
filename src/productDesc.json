@@ -1,26 +1,26 @@
 [
     {
         "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "background": "../src/assets/Rectangle.png"
+        "background": "Rectangle.png"
     },
     {
         "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "background": "../src/assets/Rectangle.png"
+        "background": "Rectangle.png"
     },
     {
         "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "background": "../src/assets/Rectangle.png"
+        "background": "Rectangle.png"
     },
     {
         "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "background": "../src/assets/Rectangle.png"
+        "background": "Rectangle.png"
     },
     {
         "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "background": "../src/assets/Rectangle.png"
+        "background": "Rectangle.png"
     },
     {
         "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "background": "../src/assets/Rectangle.png"
+        "background": "Rectangle.png"
     }
 ]
