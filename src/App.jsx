@@ -1,4 +1,4 @@
-import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 import Hero from "./Components/Hero"
 import Product from "./Components/Product"
 import Introduction from "./Components/Introduction"
@@ -8,7 +8,7 @@ import './index.css'
 function App() {
     return (
         <div>
-            <Footer />
+            <Header />
             <Hero />
             <Product />
             <Introduction />
