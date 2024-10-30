@@ -1,5 +1,5 @@
 import productDesc from '../productDesc.json'
-import rectangleImage from '../assets/Rectangle.png'
+import rectangleImage from '../assets/Rectangle.png?url'
 
 export default function Product() {
     return(
