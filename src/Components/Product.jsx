@@ -1,5 +1,6 @@
 import productDesc from '../productDesc.json'
 import rectangleImage from '../assets/Rectangle.png?url'
+import { Link } from 'react-router-dom'
 
 export default function Product() {
     return(
@@ -23,9 +24,11 @@ export default function Product() {
                             <div className='text-2xl flex flex-col justify-between h-full'>
                                 {data.name}
                                 <div className='hover:bg-violet-700 border-2 p-2 rounded-md self-end'>
-                                    <button>
-                                        Loe lähemalt
-                                    </button>
+                                    <Link to={`/product/${data.id}`}>
+                                        <button>
+                                            Loe lähemalt
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
