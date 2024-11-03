@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': {'max': '450px'},
+    },
+
     extend: {
       backgroundImage: {
         'hero': "url('/src/assets/Hero-background.png')",
