@@ -19,9 +19,9 @@ export default function ProductInfo() {
     if (!product) return <div>Product not found</div>
 
     return (
-        <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-[500px]'>
-            <div className='max-w-5xl text-center text-2xl'>
-                <h1 className='pb-24 text-5xl font-bold'>Lorem Ipsum</h1>
+        <div className='flex flex-col justify-center items-center bg-purple-700 text-white min-h-[500px] p-4'>
+            <div className='max-w-5xl text-center text-lg md:text-2xl'>
+                <h1 className='pb-12 md:pb-24 text-3xl md:text-5xl font-bold'>Lorem Ipsum</h1>
                 {product.info}
             </div>
         </div>
