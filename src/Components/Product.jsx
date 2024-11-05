@@ -29,10 +29,10 @@ export default function Product() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </Helmet>
         <div className='flex flex-col text-center pt-8'>
-            <h1 className='text-6xl text-purple-700 font-bold xs:text-4xl xs:pt-6'>Lorem Ipsum</h1>
-            <p className='text-2xl pt-6 break-words max-w-4xl mx-auto xs:text-lg xs:text-left xs:p-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <h1 className='text-6xl text-purple-700 font-bold xs:text-4xl'>Lorem Ipsum</h1>
+            <p className='text-2xl pt-6 break-words max-w-4xl mx-auto xs:text-lg xs:p-4 pb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
         </div>
-        <div className="grid justify-center grid-cols-3 grid-rows-2 h-auto space-x-0 xs:grid-cols-1 gap-4 max-w-[900px] mx-auto pt-24">
+        <div className="grid justify-center grid-cols-3 grid-rows-2 h-auto space-x-0 xs:grid-cols-1 gap-4 max-w-[900px] mx-auto">
             {productsToDisplay.map(function(data) {
                 return (
                     <div className='flex justify-center items-center h-full' key={data.name}>
@@ -66,7 +66,7 @@ export default function Product() {
                 onClick={() => setExpanded(!expanded)}
                 className="bg-purple-700 text-white px-4 py-2 rounded"
             >
-                {expanded ? 'Show Less' : 'Show More'}
+                {expanded ? 'Näita Veel' : 'Näita Vähem'}
             </button>
         </div>
         )}
