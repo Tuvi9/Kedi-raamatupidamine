@@ -66,7 +66,7 @@ export default function Product() {
                 onClick={() => setExpanded(!expanded)}
                 className="bg-purple-700 text-white px-4 py-2 rounded"
             >
-                {expanded ? 'Näita Veel' : 'Näita Vähem'}
+                {expanded ? 'Näita Vähem' : 'Näita Veel'}
             </button>
         </div>
         )}
