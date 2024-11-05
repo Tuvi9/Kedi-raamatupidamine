@@ -2,8 +2,27 @@ import productDesc from '../productDesc.json'
 import rectangleImage from '../assets/Rectangle.png?url'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import { useState, useEffect } from 'react'
 
 export default function Product() {
+    // At the start expanded is set to false so only the first 3 products appear
+    const [expanded, setExpanded] = useState(false)
+
+    // Store the width of viewport
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        // updates what our current viewport width is
+        const handleResize = () => setWindowWidth(window.innerWidth)
+        // looks for when width changes
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
+    // mobile view is width < 640px
+    const isMobile = windowWidth < 640;
+    // if we are on mobile view and  setExpanded is false then slice only the first 3 elements
+    const productsToDisplay = (isMobile && !expanded) ? productDesc.slice(0, 3) : productDesc
     return(
         <>
         <Helmet>
@@ -13,10 +32,10 @@ export default function Product() {
             <h1 className='text-6xl text-purple-700 font-bold xs:text-4xl xs:pt-6'>Lorem Ipsum</h1>
             <p className='text-2xl pt-6 break-words max-w-4xl mx-auto xs:text-lg xs:text-left xs:p-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
         </div>
-        <div className="grid justify-center grid-cols-3 grid-rows-2 h-auto xs:grid-cols-1">
-            {productDesc.map(function(data) {
+        <div className="grid justify-center grid-cols-3 grid-rows-2 h-auto space-x-0 xs:grid-cols-1 gap-4 max-w-[900px] mx-auto pt-24">
+            {productsToDisplay.map(function(data) {
                 return (
-                    <div className='flex justify-center items-center h-full p-4' key={data.name}>
+                    <div className='flex justify-center items-center h-full' key={data.name}>
                         <div className='border-4 p-4 border-purple-700 text-white text rounded-md w-[300px] max-w-[300px] max-h-[225px] h-[225px] break-words'
                             style={{
                                 backgroundImage: `url(${rectangleImage})`,
@@ -40,6 +59,17 @@ export default function Product() {
                 )
             })}
         </div>
+        {isMobile && productDesc.length > 3 && (
+            <div className="text-center mt-4">
+            <button
+                // If the button Show More is clicked expanded gets set to true and everything is displayed
+                onClick={() => setExpanded(!expanded)}
+                className="bg-purple-700 text-white px-4 py-2 rounded"
+            >
+                {expanded ? 'Show Less' : 'Show More'}
+            </button>
+        </div>
+        )}
         </>
     )
 }
