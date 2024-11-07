@@ -1,8 +1,15 @@
 import introductionPhoto from '../assets/introduction-photo.png'
+import { useInView } from 'react-intersection-observer'
 
 export default function Introduction() {
+
+    const { ref, inView} = useInView({
+        threshold: 0.5,
+        triggerOnce: true
+    })
+
     return(
-        <div className='xs:flex xs:flex-col grid grid-cols-2 pt-24 max-w-5xl justify-center mx-auto px-4'>
+        <div ref={ref} className={`xs:flex xs:flex-col grid grid-cols-2 pt-24 max-w-5xl justify-center mx-auto px-4 transition-all duration-700 ease-in ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className='border-4 border-purple-700 rounded-md'>
                 <img className='object-fit h-full w-full' src={introductionPhoto} alt="Introduction"></img>
             </div>

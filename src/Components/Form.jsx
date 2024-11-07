@@ -1,11 +1,16 @@
 import { useRef, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
+import { useInView } from 'react-intersection-observer';
 
 
 emailjs.init(import.meta.env.VITE_PUBLIC_KEY)
 
 export default function Form() {
 
+    const { ref, inView} = useInView({
+        threshold: 0.5,
+        triggerOnce: true
+    })
     const form = useRef();
     useEffect(() => {
         console.log(import.meta.env.VITE_PUBLIC_KEY)
@@ -31,7 +36,7 @@ export default function Form() {
 
     return(
         <>
-        <div className="flex flex-col items-center justify-center w-full max-w-md mx-auto mt-8 px-4">
+        <div ref={ref} className={`flex flex-col items-center justify-center w-full max-w-md mx-auto mt-8 px-4 transition-all duration-700 ease-in ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className='text-purple-700 font-bold xs:text-2xl text-4xl pb-[25px]'>
                 <h1>Kirjutage meile</h1>
             </div>
