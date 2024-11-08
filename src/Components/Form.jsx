@@ -8,7 +8,7 @@ emailjs.init(import.meta.env.VITE_PUBLIC_KEY)
 export default function Form() {
 
     const { ref, inView} = useInView({
-        threshold: 0.5,
+        threshold: 0.3,
         triggerOnce: true
     })
     const form = useRef();
