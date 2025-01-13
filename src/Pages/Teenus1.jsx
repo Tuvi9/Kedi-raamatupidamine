@@ -1,16 +1,18 @@
 import Header from "../Components/Header";
-import ProductInfo from '../Components/ProductInfo'
 import Form from '../Components/Form'
 import Footer from "../Components/Footer";
+import Taispakett from '../Components/Taispakett';
 import '../index.css'
 
-export default function ProductDesc() {
+function Teenus1() {
     return (
         <div>
             <Header/>
-            <ProductInfo/>
+            <Taispakett/>
             <Form/>
             <Footer/>
         </div>
     )
 }
+
+export default Teenus1;

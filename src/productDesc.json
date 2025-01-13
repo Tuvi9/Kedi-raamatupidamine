@@ -1,32 +1,22 @@
 [
     {
         "id": 1,
-        "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "name": "Raamatupidamise täispakett",
         "background": "Rectangle.png"
     },
     {
         "id": 2,
-        "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "name": "Aastaaruande koostamine",
         "background": "Rectangle.png"
     },
     {
         "id": 3,
-        "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "name": "Palgaarvestus ja TSD deklaratsioon",
         "background": "Rectangle.png"
     },
     {
         "id": 4,
-        "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "background": "Rectangle.png"
-    },
-    {
-        "id": 5,
-        "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "background": "Rectangle.png"
-    },
-    {
-        "id": 6,
-        "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "name": "Muud teenused",
         "background": "Rectangle.png"
     }
 ]

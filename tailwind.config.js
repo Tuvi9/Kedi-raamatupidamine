@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import highlights from 'tailwindcss-highlights'
+
 export default {
   content: [
     "./index.html",
@@ -15,6 +17,8 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    highlights,
+  ]
 }
 

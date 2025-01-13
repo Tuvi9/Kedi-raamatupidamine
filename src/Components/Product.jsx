@@ -37,8 +37,8 @@ export default function Product() {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Helmet>
             <div className='flex flex-col text-center pt-8'>
-                <h1 className='text-6xl text-purple-700 font-bold xs:text-4xl'>Lorem Ipsum</h1>
-                <p className='text-2xl pt-6 break-words max-w-4xl mx-auto xs:text-lg xs:p-4 pb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <h1 className='text-6xl text-purple-700 font-bold xs:text-4xl'>TEENUSED</h1>
+                <p className='text-2xl pt-6 break-words max-w-4xl mx-auto xs:text-lg xs:p-4 pb-8'>Raamatupidamine võib tunduda keeruline ja aeganõudev, kuid meie eesmärk on muuta see teie jaoks lihtsaks ja arusaadavaks. Oleme spetsialiseerunud mikro- ja väikeettevõtete vajadustele ning pakume personaalset ja professionaalset teenust, et saaksite keskenduda sellele, mis on teie äri jaoks kõige olulisem – kasvamisele ja edukale tegutsemisele.</p>
             </div>
             <div className={`grid justify-center grid-cols-3 grid-rows-2 h-auto space-x-0 xs:grid-cols-1 gap-4 max-w-[900px] mx-auto`}>
                 {productsToDisplay.map(function(data) {
@@ -53,7 +53,7 @@ export default function Product() {
                                 }}
                                 >
                                 <div className='text-2xl flex flex-col justify-between h-full'>
-                                    {data.name}
+                                    <div dangerouslySetInnerHTML={{ __html: data.name}}/>
                                     <div className='hover:bg-violet-700 border-2 p-2 rounded-md self-end'>
                                         <Link to={`/product/${data.id}`}>
                                             <button>
