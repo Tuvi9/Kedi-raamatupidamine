@@ -4,6 +4,11 @@ on:
   push:
     branches: [ main ]
 
+# Add this concurrency group to ensure only one deployment runs at a time
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 permissions:
   contents: read
   pages: write
@@ -20,11 +25,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'  # Add caching
 
       - name: Install Dependencies
-        run: |
-          npm clean-install
-          npm install -g vite
+        run: npm clean-install
 
       - name: Build
         run: npm run build
@@ -37,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: 'dist'  # Make sure this matches your build output directory
 
   deploy:
     needs: build
