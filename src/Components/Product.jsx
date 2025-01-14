@@ -43,7 +43,7 @@ export default function Product() {
             <div className={`grid justify-items-center grid-cols-2 grid-rows-2 h-auto space-x-0 xs:grid-cols-1 gap-4 max-w-[900px] mx-auto`}>
                 {productsToDisplay.map(function(data, index) {
                     // JSON starts counting from 0 the first colum is even numbers and they get alligned to the right while the second colum is uneven so they get alligned to the left.
-                    const alignmentClass = index % 2 === 0 ? 'justify-self-end' : 'justify-self-start';
+                    const alignmentClass = isMobile ? 'justify-self-center' : (index % 2 === 0 ? 'justify-self-end' : 'justify-self-start');
                     return (
                         <div
                             className={`flex justify-center items-start h-full ${alignmentClass}`}

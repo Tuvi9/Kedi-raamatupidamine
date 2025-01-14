@@ -1,8 +1,8 @@
 function Taispakett() {
     return(
-        <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8'>
+    <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8'>
         <div className='max-w-5xl text-left text-2xl'>
-            <p>Raamatupidamise täispakett sisaldab igakuist raamatupidamise arvestust, mis
+            <p><span className='highlight highlight-white text-purple-700 p-1'>Raamatupidamise</span> täispakett sisaldab igakuist raamatupidamise arvestust, mis
             vastab Eesti finantsaruandluse standarditele. Teenus sisaldab kõikide<br></br>
             raamatupidamiskannete korrektset kajastamist ning igakuist bilansi – ja<br></br>
             kasumiaruande koostamist.</p>
@@ -25,10 +25,10 @@ function Taispakett() {
             raamatupidamisteenuse eest maksad iga kuu täpselt nii palju, kui jooksvas kuus
             dokumente on.</p>
             <br></br>
-            <p>Kui ettevõtte on käibemaksukohustuslane, siis üks ostu/müügiarve on minimaalselt 3
+            <p className='highlight highlight-white text-purple-700 p-8'>Kui ettevõtte on käibemaksukohustuslane, siis üks ostu/müügiarve on minimaalselt 3
             kirjet. Ühe pangarea kajastamine 2 kirjet.</p>
             <br></br>
-            <p className="text-3xl font-extrabold">Kirjepõhise kuutasu näide:</p>
+            <p className='text-3xl font-extrabold'>Kirjepõhise kuutasu näide:</p>
             <br></br>
             <p>Ettevõtte on käibemaksukohustuslane, põhivarade kogus 7, üks töötaja.</p>
             <br></br>
