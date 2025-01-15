@@ -1,7 +1,7 @@
 function Aastaaruanne() {
     return(
-    <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8'>
-        <div className='max-w-5xl text-left text-2xl'>
+    <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8 xs:px-4'>
+        <div className='max-w-5xl text-left text-2xl xs:text-xl'>
             <p>Iga äriühing peab majandusaasta aruande esitama äriregistrile hiljemalt 6 kuu
             jooksul peale majandusaasta lõppu.</p>
             <br></br>

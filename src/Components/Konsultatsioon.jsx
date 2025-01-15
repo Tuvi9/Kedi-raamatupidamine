@@ -1,7 +1,7 @@
 function Konsutatsioonid() {
     return(
-    <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8'>
-        <div className='max-w-5xl text-left text-2xl'>
+    <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8 xs:px-4'>
+        <div className='max-w-5xl text-left text-2xl xs:text-xl'>
             <p className='highlight highlight-white text-purple-700 p-4'>Kui sul on tekkinud küsimusi või soovid saada nõu, võta julgelt ühendust!</p>
             <br></br>
             <p className='text-3xl font-extrabold'>Pakume konsultatsiooni teemadel:</p>

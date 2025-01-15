@@ -1,7 +1,7 @@
 function Taispakett() {
     return(
-    <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8'>
-        <div className='max-w-5xl text-left text-2xl'>
+    <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8 xs:px-4'>
+        <div className='max-w-5xl text-left text-2xl xs:text-xl'>
             <p><span className='highlight highlight-white text-purple-700 p-1'>Raamatupidamise</span> täispakett sisaldab igakuist raamatupidamise arvestust, mis
             vastab Eesti finantsaruandluse standarditele. Teenus sisaldab kõikide<br></br>
             raamatupidamiskannete korrektset kajastamist ning igakuist bilansi – ja<br></br>

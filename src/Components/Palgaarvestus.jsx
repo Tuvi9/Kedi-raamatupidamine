@@ -1,7 +1,7 @@
 function Palgaarvestus() {
     return(
-    <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8'>
-        <div className='max-w-5xl text-left text-2xl'>
+    <div className='flex flex-col justify-center items-center bg-purple-700 text-white h-auto py-8 xs:px-4'>
+        <div className='max-w-5xl text-left text-2xl xs:text-xl'>
             <p>Pakume terviklikku palgaarvestusteenust, alates töötasude ja maksude
             arvestamisest kuni TSD deklaratsiooni esitamiseni Maksu- ja Tolliametile. Tagame, et
             teie ettevõtte palgaarvestus vastab kehtivatele nõuetele ning hoiame teid kursis
